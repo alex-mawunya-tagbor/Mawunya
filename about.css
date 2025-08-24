@@ -1,0 +1,61 @@
+/* ABOUT SECTION */
+.about_section {
+    background-color: var(--background-color);
+    padding-top: 0.2rem;
+    text-align: center;
+    max-width: 1100px;
+}
+
+.about_text {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 1rem 1rem;
+}
+
+.about_text p {
+    font-size: 1.1rem;
+    line-height: 2.0;
+    color: var(--text-color-dark);
+    text-align: justify;
+}
+
+.about_text h2 {
+    margin-top: 0; /* Ensures the heading sits closer to the content above it */
+}
+
+/* PROFILE PICTURE STYLES */
+.profile_image_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    z-index: 10;
+    position: relative;
+}
+
+.profile_image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent-color-light);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 768px) {
+    .profile_image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile_image_wrapper {
+        margin-top: -75px;
+    }
+
+    .about_section {
+        padding-top: 0.5rem; /* Adjusted for smaller screens as well */
+    }
+    .about_text p {
+    text-align: center;
+    }
+}
